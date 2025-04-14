@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Setup the window
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = UIViewController()
+        let viewController = FirstViewController()
         let viewController2 = UIViewController()
         
         viewController.view.backgroundColor = .random
