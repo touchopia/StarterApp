@@ -17,17 +17,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Setup the window
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = FirstViewController()
-        let viewController2 = UIViewController()
+        let firstVC = FirstViewController()
+        let secondVC = UIViewController()
         
-        viewController.view.backgroundColor = .random
-        viewController.title = "View Controller 1"
+        firstVC.view.backgroundColor = .random
+        firstVC.title = "View Controller 1"
         
-        viewController2.view.backgroundColor = .random
-        viewController2.title = "View Controller 2"
+        secondVC.view.backgroundColor = .random
+        secondVC.title = "View Controller 2"
         
-        let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.pushViewController(viewController2, animated: false)
+        let navigationController = UINavigationController(rootViewController: firstVC)
+        navigationController.pushViewController(secondVC, animated: false)
         
         // Navigation Setup
         UINavigationBar.appearance().tintColor = .black

@@ -39,9 +39,8 @@ class FirstViewController: UIViewController {
     @objc func buttonTapped() {
         let secondVC = UIViewController()
         secondVC.view.backgroundColor = .random
-        
-        
-        self.navigationController?.pushViewController(secondVC, animated: false)
+        secondVC.title = "View Controller 2"
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
 
 }
